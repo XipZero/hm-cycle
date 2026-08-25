@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<!-- Page Header -->
+<header>
+<h1>CYCLE RACING</h1>
+<img class="imageBanner" src="cycleRaceBanner.jpg">
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="home.html"> Home </a></li>
+<li><a href="road.html"> Road </a></li>
+<li><a href="track.html"> Track </a></li>
+<li><a href="mountain.html"> Mountain </a></li>
+<li><a href="bmx.html"> BMX </a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main style="height:600px">
+    
+<section>
+<p> If you like bikes and are looking for a new sport then cycle racing could be for you.  This website will explain many difference types of cycle racing and explain to you how to get involved. </p>    
+</section> 
+    
+<section id="raceDescriptions">
+<h2>Road Racing</h2>
+<p>Road racing is a sport that demands high levels of endurance, skill and tactical awareness.  Races are often won, not by the best or fastest cyclest, but by team work and an ability to read a race.  There are hundreds of road cycling clubs in the UK so there is bound to be a local club you can join.</p> 
+<h2>Track Cycling</h2>
+<p>Track cycling is the most technical of all the cycling disciplines.  Cyclist race round a wooden track called a velodrome, often at very high speeds, on specialist bikes.</p>
+<h2>Mountain Biking</h2>
+<p>Mountain bike racing may involve tackling off-road cross-country tracks, hunrtling downhill at extreme speeds or racing against a few other cyclist in four cross.  The mountain bike scene is huge with tracks  of varying levels of diffficulty all over the country.</p>
+<h2>BMX</h2>
+<p>BMX racing started in the 1980's on dirt tracks and has now evolved into a fast paced sport which takes place on purpose built circuits.  Cyclist must have great endurance and bike skills to tackle the fast turns and jumps of a BMX track.</p>    
+</section> 
+    
+<section id="newsletterForm">
+<h2>Newsletter Application</h2>
+<p>Please complete the form below to receive regular emails.</p>
+    
+<form action="">
+First name<br>
+    <input type="text" name="firstname" size="25" required>
+    <br>
+Surname<br>
+    <input type="text" name="surname" size="25" required>
+    <br><br>
+Number of years cycling<br>
+    <input type="number" name="cyclingYears" min="0" max="100">
+    <br><br> 
+Select hours cycled per week<br>
+    <input type="radio" name="hours" value="0 to 5" checked> 0-5
+    <input type="radio" name="hours" value="6 to 10"> 6-10
+    <input type="radio" name="hours" value="11 to 15"> 11-15
+    <input type="radio" name="hours" value="over 15"> 15+
+    <br><br>  
+Select the type of bikes you own?<br>
+  <select name="bikeType" multiple size="3">
+    <option value="lowest">Road</option>
+    <option value="second">Track</option>
+    <option value="third">Mountain</option>
+    <option value="most">BMX</option>
+  </select>
+  <br><br>
+What got you interested in competitive cycling?<br>
+  <textarea name="message" rows="5" cols="45" maxlength="250">  </textarea>
+  <br><br>
+<!--Button  -->
+  <input type="submit" onclick="alert('Form Entered')" value="Submit">
+</form>     
+</section>
+
+</main>
+
+<!-- Page Footer -->
+<footer>
+<p> Email us at: getintocycleracing@lovecycling.org <br>
+All information copyright lovecycling.org  </p>
+</footer>
+
+</body>
+</html>
+
+

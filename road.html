@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Road Racing</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+    
+<script>
+    
+function changeLeft() {
+    document.getElementById("roadSide").style.width='540px';
+	document.getElementById("trialSide").style.width='200px';
+    
+    document.getElementById("road").style.display='inline';
+    document.getElementById("road1").style.display='inline';
+    document.getElementById("road2").style.display='inline';
+    document.getElementById("road").style.width='170px';
+    document.getElementById("road").style.height='113px';
+    document.getElementById("road").style.marginRight='10px';
+
+    document.getElementById("roadParagraph").style.display='block';
+}
+    
+function changeRight() {
+    document.getElementById("roadSide").style.width='200px';
+	document.getElementById("trialSide").style.width='540px';
+    
+    document.getElementById("trial").style.display='inline';
+    document.getElementById("trial").style.width='170px';
+    document.getElementById("trial").style.height='113px';
+    document.getElementById("trial").style.marginRight='10px';
+    document.getElementById("trial1").style.display='inline';
+    document.getElementById("trial2").style.display='inline';
+    
+    document.getElementById("trialParagraph").style.display='block';
+}
+    
+function changeBack() {
+    document.getElementById("roadSide").style.width='370px';
+	document.getElementById("trialSide").style.width='370px';
+    document.getElementById("road").style.display='block';
+    document.getElementById("road").style.width='200px';
+    document.getElementById("road").style.height='133px';
+    document.getElementById("road").style.margin='auto';
+    document.getElementById("road1").style.display='none';
+    document.getElementById("road2").style.display='none';
+    
+    document.getElementById("roadParagraph").style.display='none';
+    
+    document.getElementById("trial").style.display='block';
+    document.getElementById("trial").style.width='200px';
+    document.getElementById("trial").style.height='133px';
+    document.getElementById("trial").style.margin='auto';
+    document.getElementById("trial1").style.display='none';
+    document.getElementById("trial2").style.display='none';
+    
+    document.getElementById("trialParagraph").style.display='none';
+}    
+    
+</script>  
+    
+</head>
+
+<body>
+
+<!-- Page Header -->
+<header>
+<h1>CYCLE RACING</h1>
+<img class="imageBanner" src="cycleRaceBanner.jpg">
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="road.html">Road</a></li>
+<li><a href="track.html">Track</a></li>
+<li><a href="mountain.html">Mountain</a></li>
+<li><a href="bmx.html">BMX</a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main style="height:460px">
+<h2>Bicycle Racing on Roads</h2>   
+
+<section id="roadSide" style="width:370px;height:400px;display:inline;float:left;margin-left:10px" onmouseover="changeLeft()" onmouseout="changeBack()">
+    <img id="road" src="road.jpg" style="width:200px;height:133px;display:block;margin:auto">
+    <img id="road1" src="road1.jpg" style="display:none;width:170px;height:113px;margin-right:10px">
+    <img id="road2" src=".road2.jpg" style="display:none;width:170px;height:113px">    
+    <p style="margin-top:20px">Road racing is held on paved roads and is the most popular professional form of bicycle racing, in terms of numbers of competitors, events and spectators. The most common competition format are mass start events, where riders start simultaneously and race to set finish point. Stage races or "tours" take multiple days, and consist of several mass-start or time-trial stages ridden consecutively.</p>
+    <p id="roadParagraph" style="display:none">Professional racing is most popular in Western Europe, centered on France, Spain, Italy and the Low Countries. Since the mid-1980s the sport has diversified with professional races now held on all continents of the globe. The biggest event is the Tour de France, a three-week race that can attract over 500,000 roadside supporters a day.</p>  
+</section>
+
+<section id="trialSide" style="width:370px;height:400px;display:inline;float:right;margin-right:10px" onmouseover="changeRight()" onmouseout="changeBack()">
+    <img id="trial" src="trial.jpg" style="width:200px;height:133px;display:block;margin:auto">
+    <img id="trial1" src="trial1.jpg" style="display:none;width:170px;height:113px;margin-right:10px">
+    <img id="trial2" src="trial2.jpg" style="display:none;width:170px;height:113px">    
+    <p style="margin-top:20px">An individual time trial is a race against the clock. Riders covered the same distance leaving at 2 minute intervals. Winning depends on strength and endurance, and not on help provided by teammates and other riders creating a slipstream. The opening stage of stage race will often be a short individual time trial called a prologue.</p>
+    <p id="trialParagraph" style="display:none">A time trial bicycle is designed for use in an individual or team time trials raced on roads.  Since the cyclist in a time trial is not permitted to ride in the slipstream of other cyclists, reducing aerodynamic drag of the bicycle and rider is critical. Triathlon handlebars provided a low tucked position that is aerodynamic while providing good stability. Time trial races tend to be much shorter than road races, so comfort is less of an issue. Also, control of the bike is less important, since there is little chance of bumping another rider and the courses tend to be less technical with little hill climbing, turns or descents.</p>  
+</section>
+
+
+
+
+</main>
+
+<!-- Page Footer -->
+<footer>
+<p> Email us at: getintocycleracing@lovecycling.org <br>
+All information copyright lovecycling.org  </p>
+</footer>
+
+</body>
+</html>

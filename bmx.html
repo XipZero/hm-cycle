@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>BMX Racing</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+    
+<script>
+    
+<!-- showLarge is called onmouseout -->
+function showLarge(thisGraphic) 
+{thisGraphic.style.width='300px';
+thisGraphic.style.height='225px';}
+
+<!-- showNormal is called onmouseout -->
+function showNormal(thisGraphic) 
+{thisGraphic.style.width='200px';
+thisGraphic.style.height='150px';}
+    
+</script>  
+    
+</head>
+
+<body>
+
+<!-- Page Header -->
+<header>
+<h1>CYCLE RACING</h1>
+<img class="imageBanner" src="cycleRaceBanner.jpg">
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="road.html">Road</a></li>
+<li><a href="track.html">Track</a></li>
+<li><a href="mountain.html">Mountain</a></li>
+<li><a href="bmx.html">BMX</a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main>
+<h2>BMX Racing</h2>
+<p>BMX racing is a type of off-road bicycle racing derived from motocross racing. 
+<br><br>BMX bicycle races are sprint races on purpose-built off-road single-lap race tracks. The track usually consists of a starting gate for up to eight racers.  From the starting gate the riders drop down a ramp into a serpentine, dirt race course made of various jumps and rollers. The course is usually flat, about 15 feet (4.6 m) wide and has large banked corners. 
+<br><br>The sport of BMX racing is facilitated by a number of regional and international sanctioning bodies that provide rules for the sport. The sport is very family oriented and largely participant-driven, with riders ranging in age from 2 to 70, and over. Professional ranks exist for both men and women, where the age ranges from 18 to 40 years old.</p>
+
+<!--Example of image size change implement within an element.-->
+<img class="BMXImages" src="bmxRacing1.jpg" onmouseover="this.style.width='300px';this.style.height='225px'" onmouseout='this.style.width="200px";this.style.height="150px"'>
+    
+<!--Example of image size change implemented as a function call.-->
+<img class="BMXImages" src="bmxRacing3.jpg" onMouseOver="showLarge(this)" onMouseOut="showNormal(this)">
+    
+<img class="BMXImages" src="bmxRacing2.jpg" onmouseover="this.style.width='300px';this.style.height='225px'" onmouseout="this.style.width='200px';this.style.height='150px'">
+
+</main>
+
+<!-- Page Footer -->
+<footer>
+<p> Email us at: getintocycleracing@lovecycling.org <br>
+All information copyright lovecycling.org  </p>
+</footer>
+
+</body>
+</html>

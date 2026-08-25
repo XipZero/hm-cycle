@@ -1,0 +1,61 @@
+/* The Universal Selector has been used here to cancel the browser default margins and */
+/* padding for every page element.  This ensures that only assigned */
+/* margin and padding values are implemented when viewing pages. */
+* {margin:0;padding:0}
+
+/* Background Colours */
+header, footer {background-color:#edd9c0}
+nav {background-color:#7d4627}
+main {background-color:#a8b6bf}
+div, section {background-color: #c9d8c5}
+
+/* Text Properties */
+h1 {font-size:32px;color:#7d4627}
+h2 {font-size:14px;color:black}
+
+
+
+/* Margins */
+nav, main, footer {margin-top:5px}
+section {margin:5px}
+body {margin:auto}
+p {margin-bottom:15px}
+h2 {margin-bottom:20px}
+
+
+/* Padding */
+header, section, footer, main {padding:5px}
+ 
+
+
+/* Positioning (Float, Display and Clear) */
+h1 {float:right}
+#raceDescriptions {float:left;width:400px}
+#newsletterForm  {float:right;width:350px}
+header, nav, main, footer {display:block;clear:both}
+
+
+/* Element Sizes */
+body {width:800px}
+.imageBanner {width:400px;height:100px}
+header {height:100px}
+footer {height:60px}
+nav {height:38px}
+.BMXImages {width:200px;height:150px;margin-right:20px}
+.mountainImages {width:160px;height:120px;margin-right:10px}
+.buttonTrack {width:145px;height:35px;margin:10px}
+.mountainImages {width:100px;height:70px}
+
+
+/* Text Properties */
+
+
+
+/* Navigation List Properties */
+nav ul {list-style-type:none}
+a {color:#000}
+nav ul li {float:left;width:120px;text-align:center}
+nav ul li a {display:block;padding:10px}
+nav ul li a:hover {background-color:#edd9c0;color:#7d4627}
+
+
